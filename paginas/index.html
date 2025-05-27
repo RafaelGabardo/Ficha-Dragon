@@ -55,36 +55,75 @@
     <ul class="list">
       <li>
         <a class="link" href="#">
-          <button class="button">Entrar</button>
+          <button id="login" class="button">Entrar</button>
         </a>
       </li>
       <li>
         <a class="link" href="#">
-          <button class="button red">Cadastrar-se</button>
+          <button id="cadastro" class="button red">Cadastrar-se</button>
         </a>
       </li>
     </ul>
   </nav>
   <main>
+    <div id="login-modal" class="modal">
+      <div class="modal-content login">
+        <div class="conserta-span">
+          <div class="caixa-span">
+            <span class="fechar-modal">&times;</span>
+          </div>
+        </div>
+        <h3>Inicias Sessão</h3>
+        <form action="#">
+          <label for="usuario">NOME DE USUÁRIO:</label><br>
+          <input class="modal-input" type="text" name="usuario" id="usuario"><br><br>
+          <label for="login-senha">SENHA:</label><br>
+          <input class="modal-input" type="password" name="login-senha" id="login-senha"><br><br>
+          <input class="submit" type="submit" name="login-submit" id="login-submit" value="INICIAR SESSÃO"><br>
+          <a class="link-login" href="#">Esqueceu sua senha?</a>
+        </form>
+      </div>
+    </div>
+    <div id="cadastro-modal" class="modal">
+      <div class="modal-content cadastro">
+        <div class="conserta-span">
+          <div class="caixa-span">
+            <span class="fechar-modal">&times;</span>
+          </div>
+        </div>
+        <h3>Crie sua Conta</h3>
+        <form action="#">
+          <label for="nome">NOME DE USUÁRIO:</label><br>
+          <input class="modal-input" type="text" name="nome" id="nome"><br><br>
+          <label for="email">EMAIL:</label><br>
+          <input class="modal-input" type="email" name="email" id="email"><br><br>
+          <label for="cadastro-senha">CRIE SUA SENHA:</label><br>
+          <input class="modal-input" type="password" name="cadastro-senha" id="cadastro-senha"><br><br>
+          <label for="confirmar-senha">CONFIRME SUA SENHA:</label><br>
+          <input class="modal-input" type="password" name="confirmar-senha" id="confirmar-senha"><br><br>
+          <input class="submit" type="submit" name="cadastro-submit" id="cadastro-submit" value="CRIAR SUA CONTA">
+        </form>
+      </div>
+    </div>
     <header>
       <h1 class="titulo">Ficha Dragon</h1>
     </header>
     <section>
       <div class="secao direita">
-        <div class="card">
+        <div class="card red">
           <p>Convide seus amigos para seu grupo e administre a própria aventura,
             consultando as fichas de seus jogadores quando quiser!</p>
         </div>
       </div>
       <div class="secao">
-        <div class="card esquerda">
+        <div class="card red esquerda">
           <p>Crie seu personagem, do jeito que desejar,
             com uma interface gratuita em português e automatizada,
             garantindo a fluídez do jogo!</p>
         </div>
       </div>
       <div class="secao direita">
-        <div class="card ultimo">
+        <div class="card red ultimo">
           <p>Tenha tudo na palma da mão com um clique,
             podendo exportar seus dados de fichas em formato PDF e
             carregá-los para onde quiser!</p>
@@ -136,5 +175,6 @@
       </ul>
     </div>
   </footer>
+  <script src="/scripts/modal_script.js"></script>
 </body>
 </html>

@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
   <title>Ficha Dragon</title>
 </head>
@@ -70,17 +70,19 @@
       <div class="modal-content login">
         <div class="conserta-span">
           <div class="caixa-span">
-            <span class="fechar-modal">&times;</span>
-          </div>
+            <span onclick="aperta_xis()" class="fechar-modal">&times;</span>
+          </div>  
         </div>
-        <h3>Inicias Sessão</h3>
+        <h2>Iniciar Sessão</h3>
         <form action="#">
           <label for="usuario">NOME DE USUÁRIO:</label><br>
           <input class="modal-input" type="text" name="usuario" id="usuario"><br><br>
           <label for="login-senha">SENHA:</label><br>
           <input class="modal-input" type="password" name="login-senha" id="login-senha"><br><br>
-          <input class="submit" type="submit" name="login-submit" id="login-submit" value="INICIAR SESSÃO"><br>
-          <a class="link-login" href="#">Esqueceu sua senha?</a>
+          <div class="div-submit">
+            <input class="submit" type="submit" name="login-submit" id="login-submit" value="INICIAR SESSÃO"><br>
+            <a class="link-login" href="#">Esqueceu sua senha?</a>
+          </div>
         </form>
       </div>
     </div>
@@ -88,10 +90,10 @@
       <div class="modal-content cadastro">
         <div class="conserta-span">
           <div class="caixa-span">
-            <span class="fechar-modal">&times;</span>
+            <span onclick="aperta_xis()" class="fechar-modal">&times;</span>
           </div>
         </div>
-        <h3>Crie sua Conta</h3>
+        <h2>Crie sua Conta</h3>
         <form action="#">
           <label for="nome">NOME DE USUÁRIO:</label><br>
           <input class="modal-input" type="text" name="nome" id="nome"><br><br>
@@ -101,7 +103,9 @@
           <input class="modal-input" type="password" name="cadastro-senha" id="cadastro-senha"><br><br>
           <label for="confirmar-senha">CONFIRME SUA SENHA:</label><br>
           <input class="modal-input" type="password" name="confirmar-senha" id="confirmar-senha"><br><br>
-          <input class="submit" type="submit" name="cadastro-submit" id="cadastro-submit" value="CRIAR SUA CONTA">
+          <div class="div-submit">
+            <input class="submit" type="submit" name="cadastro-submit" id="cadastro-submit" value="CRIAR SUA CONTA">
+          </div>
         </form>
       </div>
     </div>
@@ -111,22 +115,31 @@
     <section>
       <div class="secao direita">
         <div class="card red">
-          <p>Convide seus amigos para seu grupo e administre a própria aventura,
+          <p class="texto-main">Convide seus amigos para seu grupo e administre a própria aventura,
             consultando as fichas de seus jogadores quando quiser!</p>
+        </div>
+        <div class="personagem-main">
+          <img class="imagem-main" src="/assets/index_personagem1.png" alt="personagem 1">
         </div>
       </div>
       <div class="secao">
         <div class="card red esquerda">
-          <p>Crie seu personagem, do jeito que desejar,
+          <p class="texto-main">Crie seu personagem, do jeito que desejar,
             com uma interface gratuita em português e automatizada,
             garantindo a fluídez do jogo!</p>
         </div>
+        <div class="personagem-main">
+          <img class="imagem-main" src="/assets/index_personagem2.png" alt="personagem 2">
+        </div>
       </div>
-      <div class="secao direita">
+      <div class="secao direita">       
         <div class="card red ultimo">
-          <p>Tenha tudo na palma da mão com um clique,
+          <p class="texto-main">Tenha tudo na palma da mão com um clique,
             podendo exportar seus dados de fichas em formato PDF e
             carregá-los para onde quiser!</p>
+        </div>
+        <div class="personagem-main">
+          <img class="imagem-main" src="/assets/index_personagem3.png" alt="personagem 3">
         </div>
       </div>
     </section>

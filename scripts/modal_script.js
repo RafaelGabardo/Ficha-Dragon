@@ -5,25 +5,21 @@ let botao_login = document.getElementById('login');
 let botao_cadastro = document.getElementById('cadastro');
 
 botao_login.onclick = function() {
-  login_modal.style.display = "block";
+  login_modal.style.display = "flex";
 }
 
 botao_cadastro.onclick = function() {
-  cadastro_modal.style.display = "block";
+  cadastro_modal.style.display = "flex";
 }
 
-span.onclick = function() {
-  if (login_modal) {
-    login_modal.style.display = "none";
-  } else if (cadastro_modal) {
-    cadastro_modal.style.display = "none";
-  }
+function aperta_xis() {
+   login_modal.style.display = "none";
+   cadastro_modal.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == login_modal) {
+  if (event.target == login_modal || event.target == cadastro_modal) {
     login_modal.style.display = "none";
-  } else if (event.target == cadastro_modal) {
     cadastro_modal.style.display = "none";
   }
 }

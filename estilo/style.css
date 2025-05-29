@@ -238,7 +238,6 @@ header {
   margin: auto;
   width: 100%;
   max-width: 1200px;
-  margin-top: 10px;
 }
 
 .form-monstros {
@@ -325,6 +324,16 @@ header {
   outline: 0;
   border: #AEAEAE solid 2px;
   text-align: center;
+}
+
+.criacao-submit {
+  background-color: #7E0000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: medium;
 }
 
 section {

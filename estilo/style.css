@@ -104,13 +104,6 @@ main {
   height: 70%;
 }
 
-/* #main-criacao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
 .modal {
   display: none;
   position: fixed;

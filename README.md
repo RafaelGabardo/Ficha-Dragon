@@ -9,6 +9,9 @@ Os planos são de desenvolver a aplicação até que ela esteja totalmente funci
 
 # Quem está desenvolvendo o Ficha Dragon?
 O grupo que está desenvolvendo esse projeto é composto por 3 integrantes atualmente, sendo eles:
-Douglas Henrique do Prado
-Rafael Giroldo Gabardo
-Willian Anderson da Rocha
+
+* Douglas Henrique do Prado
+
+* Rafael Giroldo Gabardo
+
+* Willian Anderson da Rocha

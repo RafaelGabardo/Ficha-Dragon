@@ -257,7 +257,7 @@ header {
 }
 
 .form-input {
-  border-radius: 3px;
+  border-radius: 5px;
   outline: 0;
   border: #AEAEAE solid 2px;
   width: 250px;

@@ -10,7 +10,7 @@
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
   <title>Criação de Personagens</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
@@ -65,9 +65,110 @@
       </li>
     </ul>
   </nav>
-  <main>
-
+  <main id="main-criacao">
+    <header>
+      <h1 class="titulo-criacao">CRIAÇÃO DE PERSONAGEM D&D 5.5e</h1>
+      <h2 class="subtitulo-criacao">Melhore a diversidade da sua jornada!</h2>
+    </header>
+    <form class="form-criacao" action="#">
+      <div class="grupo-criacao">
+        <label class="criacao-label" for="nome-personagem">Nome do Personagem:</label><br>
+        <input class="criacao-input form-input" required type="text" name="nome-personagem" id="nome-personagem"><br>
+      </div>
+      <div class="grupo-especie-customizada">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label class="criacao-label" for="especie-customizada">Espécie Customizada</label>
+        <input class="disabled-input form-input" type="text" name="especie-customizada" id="especie-customizada" disabled><br>
+      </div>
+      <div class="grupo-criacao">
+        <label class="criacao-label" for="classe">Classe:</label><br>
+        <select class="criacao-select form-input" name="classe" id="classe">
+          <option value="Selecionar">Selecionar</option>
+          <option value="Bárbaro">Bárbaro</option>
+          <option value="Bardo">Bardo</option>
+          <option value="Bruxo">Bruxo</option>
+          <option value="Clérigo">Clérigo</option>
+          <option value="Druida">Druida</option>
+          <option value="Feiticeiro">Feiticeiro</option>
+          <option value="Guardião">Guardião</option>
+          <option value="Guerreiro">Guerreiro</option>
+          <option value="Ladino">Ladino</option>
+          <option value="Mago">Mago</option>
+          <option value="Monge">Monge</option>
+          <option value="Paladino">Paladino</option>
+        </select><br>
+      </div>
+      <div class="grupo-criacao">
+        <label class="criacao-label" for="especie">Espécie:</label><br>
+        <select class="criacao-select form-input" required name="especie" id="especie">
+          <option value="Selecionar">Selecionar</option>
+          <option value="Aasimar">Aasimar</option>
+          <option value="Anão">Anão</option>
+          <option value="Draconato">Draconato</option>
+          <option value="Elfo">Elfo</option>
+          <option value="Gnomo">Gnomo</option>
+          <option value="Golias">Golias</option>
+          <option value="Humano">Humano</option>
+          <option value="Orc">Orc</option>
+          <option value="Pequenino">Pequenino</option>
+          <option value="Tiferino">Tiferino</option>
+        </select><br>
+      </div>
+      <div class="grupo-criacao">
+        <label class="criacao-label" for="alinhamento">Alinhamento:</label><br>
+        <select class="criacao-select form-input" required name="alinhamento" id="alinhamento">
+          <option value="Selecionar">Selecionar</option>
+          <option value="Orediro e Bom">Ordeiro e Bom</option>
+          <option value="Caótico e Bom">Caótico e Bom</option>
+          <option value="Neutro e Bom">Neutro e Bom</option>
+          <option value="Ordeiro e Neutro">Ordeiro e Neutro</option>
+          <option value="Neutro">Neutro</option>
+          <option value="Caótico e Neutro">Caótico e Neutro</option>
+          <option value="Neutro e Mau">Neutro e Mau</option>
+          <option value="Oredeiro e Mau">Ordeiro e Mau</option>
+          <option value="Caótico e Mau">Caótico e Mau</option>
+        </select><br>
+      </div>
+      <div class="grupo-criacao">
+        <label class="criacao-label" for="antecedente">Antecedente:</label><br>
+        <select class="criacao-select form-input" name="antecedente" id="antecedente">
+          <option value="Selecionar">Selecionar</option>
+          <option value="Acólito">Acólito</option>
+          <option value="Artesão">Artesão</option>
+          <option value="Artista">Artista</option>
+          <option value="Charlatão">Charlatão</option>
+          <option value="Criminoso">Criminoso</option>
+          <option value="Eremita">Eremita</option>
+          <option value="Escriba">Escriba</option>
+          <option value="Fazendeiro">Fazendeiro</option>
+          <option value="Guarda">Guarda</option>
+          <option value="Guia">Guia</option>
+          <option value="Marinheiro">Marinheiro</option>
+          <option value="Mercador">Mercador</option>
+          <option value="Nobre">Nobre</option>
+          <option value="Sábio">Sábio</option>
+          <option value="Soldado">Soldado</option>
+          <option value="Viajante">Viajante</option>
+        </select><br>
+      </div>
+      <div class="grupo-criacao">
+        <label class="criacao-label" for="nivel">Nível:</label><br>
+        <input class="criacao-input form-input" type="number" name="nivel" id="nivel"><br>
+      </div>
+      <div class="grupo criacao">
+        <label class="criacao-label" for="genero">Gênero:</label><br>
+        <input class="criacao-input form-input" type="text" name="genero" id="genero">
+      </div>
+    </form>
   </main>
+  <!--
+  opções de subraças:
+  elfo drow, silvestre e alto elfo, golias do fogo, colina,
+  tempestade, gelo, nuvem e pedra, tiferino abissal,
+  catonico e infernal, gnomo da floresta e da rocha;
+  apenas humanos têm a opção de pegar um talento de origem;
+  fazer o input desabilitado se tornar normal quando o checkbox for ativado
+  -->
   <footer>
     <div class="div-footer">
       <h4>Geradores de Fichas</h4>

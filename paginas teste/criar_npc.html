@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
+  <title>Criação de Personagens</title>
+</head>
+<body>
+  <nav>
+    <ul class="list">
+      <li>
+        <a class="link" href="#">Início</a>
+      </li>
+      <li>
+        <a class="link" href="#">Personagem</a>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span>Gerar</span>
+          <i class="fa-solid fa-caret-down"></i>
+          <div class="dropdown-content">
+            <ul class="list-dropdown">
+              <li>
+                <a class="link-dropdown" href="#">Monstros</a>
+              </li>
+              <li>
+                <a class="link-dropdown" href="#">NPC's</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <span>Aventura</span>
+          <i class="fa-solid fa-caret-down"></i>
+          <div class="dropdown-content">
+            <ul class="list-dropdown">
+              <li>
+                <a class="link-dropdown" href="#">Meus Personagens</a>
+              </li>
+              <li>
+                <a class="link-dropdown" href="#">Meu Grupo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="list">
+      <li>
+        <a class="link" href="#">
+          <button class="button">Entrar</button>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="#">
+          <button class="button red">Cadastrar-se</button>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+  <main>
+    <h1>CRIAÇÃO DE NPC</h1>
+  <p>Melhore a diversidade de sua jornada!</p>
+  <div class="container">
+    <form action="" id="npc-form">
+      <div class="input-field">
+        <div class="input-section">
+          <label>Nome do NPC</label>
+          <input type="text" name="npc-name" id="npc-name" required>
+        </div>
+        <br>
+        <div class="input-section">
+          <label>Espécie customizada</label>
+          <input type="radio" name="npc-custon" id="npc-custon" required>
+        </div>
+        <br>   
+        <div class="input-section">
+          <label>Alinhamento</label>
+            <select name="npc-alignment" id="npc-alignment" required>
+                <option value="Leal e Bom">Leal e Bom</option>
+                <option value="Neutro e Bom">Neutro e Bom</option>
+                <option value="Caótico e Bom">Caótico e Bom</option>
+                <option value="Leal e Neutro">Leal e Neutro</option>
+                <option value="Neutro">Neutro</option>
+                <option value="Caótico e Neutro">Caótico e Neutro</option>
+                <option value="Leal e Mau">Leal e Mau</option>
+                <option value="Neutro e Mau">Neutro e Mau</option>
+                <option value="Caótico e Mau">Caótico e Mau</option>
+            </select>  
+        </div>
+        <br>
+        <div class="input-section">
+          <label>Classe</label>
+          <select name="npc-class" id="npc-class" required>
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Mago">Mago</option>
+            <option value="Ladino">Ladino</option>
+          </select>
+        </div>
+        <br>
+        <div class="input-section">
+          <label>Raça</label>
+          <select name="npc-race" id="npc-race" required>
+            <option value="Humano">Humano</option'>
+            <option value="Elfo">Elfo</option>
+            <option value="Anão">Anão</option>
+            </select>
+        </div>
+        <br>
+        <div class="input-section">
+          <label>Nível</label>
+          <select name="npc-level" id="npc-level" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            </select>
+        </div>
+        
+        <h2>Distribuição de Atributos</h2>
+        <p>Distribua os pontos de atributos entre Força, Destreza, Constituição, Inteligência, Sabedoria e Carisma.</p>
+      </div>
+    </form>
+  </div>
+    <div class="container">
+        <form action="" id="npc-form">
+        <div class="input-field">
+            <div class="input-section">
+            <label>Força</label>
+            <input type="text" name="npc-for" id="npc-for" required>
+            </div>
+            <br>
+            <div class="input-section">
+            <label>Destreza</label>
+            <input type="text" name="npc-des" id="npc-des" required>
+            </div>
+            <br>
+            <div class="input-section">
+            <label>Constituição</label>
+            <input type="text" name="npc-con" id="npc-con" required>
+            </div> 
+            <br>
+            <div class="input-section">
+            <label>Inteligência</label>
+            <input type="text" name="npc-int" id="npc-int" required>
+            </div>
+            <br>
+            <div class="input-section">
+            <label>Sabedoria</label>
+            <input type="text" name="npc-sab" id="npc-sab" required>
+            </div>
+            <br>    
+            <div class="input-section">
+            <label>Carisma</label>
+            <input type="text" name="npc-car" id="npc-car" required>
+        </div>
+        <br>
+        <button type="submit" class="buttonn">Criar NPC</button>
+
+  </main>
+  </main>
+  <footer>
+    <div class="div-footer">
+      <h4>Geradores de Fichas</h4>
+      <ul class="list-footer">
+        <li>
+          <a class="link-footer" href="#">Gerador de Personagem</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Gerador de NPC</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Gerador de Monstro</a>
+        </li>
+      </ul>
+    </div>
+    <div class="div-footer">
+      <h4>Gerenciador de Fichas</h4>
+      <ul class="list-footer">
+        <li>
+          <a class="link-footer" href="#">Seus Personagens</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Seus NPC's</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Seus Monstros</a>
+        </li>
+      </ul>
+    </div>
+    <div class="div-footer">
+      <h4>Visualização de Aventura</h4>
+      <ul class="list-footer">
+        <li>
+          <a class="link-footer" href="#">Seu Grupo</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Sua Campanha</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Seu Mestre</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

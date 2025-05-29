@@ -6,3 +6,9 @@ Atualmente ainda estamos em fase de desenvolvimento, apenas com a parte visual e
 
 # Quais os planos para o futuro?
 Os planos são de desenvolver a aplicação até que ela esteja totalmente funcional, não somente com gerador de fichas, mas também com a integração de banco de dados e sincronização entre outros usuários, possibilitando a criação de grupos.
+
+# Quem está desenvolvendo o Ficha Dragon?
+O grupo que está desenvolvendo esse projeto é composto por 3 integrantes atualmente, sendo eles:
+* Douglas Henrique do Prado
+* Rafael Giroldo Gabardo
+* Willian Anderson da Rocha

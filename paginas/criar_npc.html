@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
-  <title>Criação de Personagens</title>
+  <title>Criação de NPC</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
-        <a class="link" href="#">Início</a>
+        <a class="link" href="index.html">Início</a>
       </li>
       <li>
-        <a class="link" href="#">Personagem</a>
+        <a class="link" href="criar_personagem.html">Personagem</a>
       </li>
       <li>
         <div class="dropdown">
@@ -26,10 +26,10 @@
           <div class="dropdown-content">
             <ul class="list-dropdown">
               <li>
-                <a class="link-dropdown" href="#">Monstros</a>
+                <a class="link-dropdown" href="criar_monstro.html">Monstros</a>
               </li>
               <li>
-                <a class="link-dropdown" href="#">NPC's</a>
+                <a class="link-dropdown" href="criar_npc.html">NPC's</a>
               </li>
             </ul>
           </div>
@@ -42,10 +42,10 @@
           <div class="dropdown-content">
             <ul class="list-dropdown">
               <li>
-                <a class="link-dropdown" href="#">Meus Personagens</a>
+                <a class="link-dropdown" href="perfil.html">Meus Personagens</a>
               </li>
               <li>
-                <a class="link-dropdown" href="#">Meu Grupo</a>
+                <a class="link-dropdown" href="grupo.html">Meu Grupo</a>
               </li>
             </ul>
           </div>
@@ -65,21 +65,145 @@
       </li>
     </ul>
   </nav>
-  <main>
-
+  <main id="main-criacao">
+    <header>
+      <h1 class="titulo-criacao">CRIAÇÃO DE NPC D&D 5.5e</h1>
+      <h2 class="subtitulo-criacao">Melhore a diversidade da sua jornada!</h2>
+    </header>
+    <form class="form-gerar" action="#">
+      <div class="form-criacao">
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nome-personagem">Nome do Personagem:</label>
+          <input class="criacao-input form-input" required type="text" name="nome-personagem" id="nome-personagem">
+        </div>
+        <div class="grupo-especie-customizada">
+          <input class="cracao-checkbox" type="checkbox" name="checkbox" id="checkbox">
+          <label class="criacao-label" for="especie-customizada">Espécie Customizada</label>
+          <input class="disabled-input form-input" type="text" name="especie-customizada" id="especie-customizada" disabled>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="classe">Classe:</label>
+          <select class="criacao-select form-input" name="classe" id="classe">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Bárbaro">Bárbaro</option>
+            <option value="Bardo">Bardo</option>
+            <option value="Bruxo">Bruxo</option>
+            <option value="Clérigo">Clérigo</option>
+            <option value="Druida">Druida</option>
+            <option value="Feiticeiro">Feiticeiro</option>
+            <option value="Guardião">Guardião</option>
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Ladino">Ladino</option>
+            <option value="Mago">Mago</option>
+            <option value="Monge">Monge</option>
+            <option value="Paladino">Paladino</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="especie">Espécie:</label>
+          <select class="criacao-select form-input" required name="especie" id="especie">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Aasimar">Aasimar</option>
+            <option value="Anão">Anão</option>
+            <option value="Draconato">Draconato</option>
+            <option value="Elfo">Elfo</option>
+            <option value="Gnomo">Gnomo</option>
+            <option value="Golias">Golias</option>
+            <option value="Humano">Humano</option>
+            <option value="Orc">Orc</option>
+            <option value="Pequenino">Pequenino</option>
+            <option value="Tiferino">Tiferino</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="alinhamento">Alinhamento:</label>
+          <select class="criacao-select form-input" required name="alinhamento" id="alinhamento">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Orediro e Bom">Ordeiro e Bom</option>
+            <option value="Caótico e Bom">Caótico e Bom</option>
+            <option value="Neutro e Bom">Neutro e Bom</option>
+            <option value="Ordeiro e Neutro">Ordeiro e Neutro</option>
+            <option value="Neutro">Neutro</option>
+            <option value="Caótico e Neutro">Caótico e Neutro</option>
+            <option value="Neutro e Mau">Neutro e Mau</option>
+            <option value="Oredeiro e Mau">Ordeiro e Mau</option>
+            <option value="Caótico e Mau">Caótico e Mau</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="antecedente">Antecedente:</label>
+          <select class="criacao-select form-input" name="antecedente" id="antecedente">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Acólito">Acólito</option>
+            <option value="Artesão">Artesão</option>
+            <option value="Artista">Artista</option>
+            <option value="Charlatão">Charlatão</option>
+            <option value="Criminoso">Criminoso</option>
+            <option value="Eremita">Eremita</option>
+            <option value="Escriba">Escriba</option>
+            <option value="Fazendeiro">Fazendeiro</option>
+            <option value="Guarda">Guarda</option>
+            <option value="Guia">Guia</option>
+            <option value="Marinheiro">Marinheiro</option>
+            <option value="Mercador">Mercador</option>
+            <option value="Nobre">Nobre</option>
+            <option value="Sábio">Sábio</option>
+            <option value="Soldado">Soldado</option>
+            <option value="Viajante">Viajante</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nivel">Nível:</label>
+          <input class="criacao-input form-input" type="number" name="nivel" id="nivel">
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="genero">Gênero:</label>
+          <input class="criacao-input form-input" type="text" name="genero" id="genero">
+        </div>
+      </div>
+      <div class="div-form-atributos">
+        <h3 class="titulo-atributos">Distribuição de Atributos</h3>
+        <div class="div-atributos">
+          <div class="atributo">
+            <label class="criacao-label" for="forca">FOR</label>
+            <input class="atributo-input" type="number" name="forca" id="forca">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="destreza">DEX</label>
+            <input class="atributo-input" type="number" name="destreza" id="destreza">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="constituição">CON</label>
+            <input class="atributo-input" type="number" name="constituicao" id="constituicao">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="inteligencia">INT</label>
+            <input class="atributo-input" type="number" name="inteligencia" id="inteligencia">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="sabedoria">SAB</label>
+            <input class="atributo-input" type="number" name="sabedoria" id="sabedoria">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="carisma">CAR</label>
+            <input class="atributo-input" type="number" name="carisma" id="carisma">
+          </div>
+        </div>
+      </div>
+    </form>
   </main>
   <footer>
     <div class="div-footer">
       <h4>Geradores de Fichas</h4>
       <ul class="list-footer">
         <li>
-          <a class="link-footer" href="#">Gerador de Personagem</a>
+          <a class="link-footer" href="criar_personagem.html">Gerador de Personagem</a>
         </li>
         <li>
-          <a class="link-footer" href="#">Gerador de NPC</a>
+          <a class="link-footer" href="criar_npc.html">Gerador de NPC</a>
         </li>
         <li>
-          <a class="link-footer" href="#">Gerador de Monstro</a>
+          <a class="link-footer" href="criar_monstro.html">Gerador de Monstro</a>
         </li>
       </ul>
     </div>
@@ -87,13 +211,13 @@
       <h4>Gerenciador de Fichas</h4>
       <ul class="list-footer">
         <li>
-          <a class="link-footer" href="#">Seus Personagens</a>
+          <a class="link-footer" href="perfil.html">Seus Personagens</a>
         </li>
         <li>
-          <a class="link-footer" href="#">Seus NPC's</a>
+          <a class="link-footer" href="perfil.html">Seus NPC's</a>
         </li>
         <li>
-          <a class="link-footer" href="#">Seus Monstros</a>
+          <a class="link-footer" href="perfil.html">Seus Monstros</a>
         </li>
       </ul>
     </div>
@@ -101,16 +225,29 @@
       <h4>Visualização de Aventura</h4>
       <ul class="list-footer">
         <li>
-          <a class="link-footer" href="#">Seu Grupo</a>
+          <a class="link-footer" href="grupo.html">Seu Grupo</a>
         </li>
         <li>
-          <a class="link-footer" href="#">Sua Campanha</a>
+          <a class="link-footer" href="aventura.html">Sua Campanha</a>
         </li>
         <li>
-          <a class="link-footer" href="#">Seu Mestre</a>
+          <a class="link-footer" href="grupo.html">Seu Mestre</a>
         </li>
       </ul>
     </div>
   </footer>
+  <script src="/scripts/especie_customizada.js"></script>
 </body>
 </html>
+
+
+<!--
+opções de subraças:
+elfo drow, silvestre e alto elfo, golias do fogo, colina,
+tempestade, gelo, nuvem e pedra, tiferino abissal,
+catônico e infernal, gnomo da floresta e da rocha;
+
+apenas humanos têm a opção de pegar um talento de origem;
+
+fazer o input desabilitado se tornar normal quando o checkbox for ativado;
+-->

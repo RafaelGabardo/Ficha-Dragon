@@ -229,11 +229,21 @@ header {
   font-size: 30px;
 }
 
+.form-gerar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
 .form-criacao {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px 15px;
   margin: auto;
+  width: 100%;
   max-width: 1200px;
   margin-top: 10px;
 }
@@ -299,7 +309,7 @@ header {
 .div-atributos {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
   width: 100%;
 }
@@ -317,6 +327,7 @@ header {
   border-radius: 5px;
   outline: 0;
   border: #AEAEAE solid 2px;
+  text-align: center;
 }
 
 section {

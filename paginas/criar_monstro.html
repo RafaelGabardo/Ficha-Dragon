@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
-  <title>Criação de Personagens</title>
+  <title>Monstros</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
@@ -65,8 +65,56 @@
       </li>
     </ul>
   </nav>
-  <main>
-
+  <main id="main-criacao">
+    <header>
+      <h1 class="titulo-criacao">CRIAÇÃO DE PERSONAGEM D&D 5.5e</h1>
+      <h2 class="subtitulo-criacao">Melhore a diversidade da sua jornada!</h2>
+    </header>
+    <form class="form-gerar" action="#">
+      <div class="form-criacao form-monstros">
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nome">Nome do Monstro:</label>
+          <input class="criacao-input form-input" type="text" name="nome" id="nome">
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="especie">Espécie do Monstro:</label>
+          <input class="criacao-input form-input" type="text" name="especie" id="especie">
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nivel">Nível:</label>
+          <input class="criacao-input form-input" type="number" name="nivel" id="nivel">
+        </div>
+      </div>
+      <div class="div-form-atributos">
+        <h3 class="titulo-atributos">Distribuição de Atributos</h3>
+        <div class="div-atributos">
+          <div class="atributo">
+            <label class="criacao-label" for="forca">FOR</label>
+            <input class="atributo-input" type="number" name="forca" id="forca">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="destreza">DEX</label>
+            <input class="atributo-input" type="number" name="destreza" id="destreza">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="constituição">CON</label>
+            <input class="atributo-input" type="number" name="constituicao" id="constituicao">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="inteligencia">INT</label>
+            <input class="atributo-input" type="number" name="inteligencia" id="inteligencia">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="sabedoria">SAB</label>
+            <input class="atributo-input" type="number" name="sabedoria" id="sabedoria">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="carisma">CAR</label>
+            <input class="atributo-input" type="number" name="carisma" id="carisma">
+          </div>
+        </div>
+      </div>
+    </form>
   </main>
   <footer>
     <div class="div-footer">

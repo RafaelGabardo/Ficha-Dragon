@@ -248,6 +248,10 @@ header {
   margin-top: 10px;
 }
 
+.form-monstros {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .grupo-criacao {
   display: flex;
   flex-direction: column;

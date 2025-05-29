@@ -1,11 +1,11 @@
 @font-face {
   font-family: fonte_titulo;
-  src: url(JainiPurva-Regular.ttf);
+  src: url(/assets/JainiPurva-Regular.ttf);
 }
 
 @font-face {
   font-family: fonte_corpo;
-  src: url(Inter-VariableFont_opsz\,wght.ttf);
+  src: url(/assets/Inter-VariableFont_opsz\,wght.ttf);
 }
 
 body {
@@ -231,12 +231,11 @@ header {
 
 .form-criacao {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px 15px;
-  padding: 25px;
   margin: auto;
-  width: 100%;
-  height: 40%;
+  max-width: 1200px;
+  margin-top: 10px;
 }
 
 .grupo-criacao {
@@ -267,19 +266,57 @@ header {
   grid-column: span 2;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  gap: 10px;
 }
 
 .disabled-input {
   background-color: #D4D4D4;
   border: #AEAEAE solid 2px;
   height: 27px;
-  margin: auto;
 }
 
 .criacao-select {
   height: 36px;
+}
+
+.div-form-atributos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  gap: 15px;
+}
+
+.titulo-atributos {
+  color: #505050;
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+.div-atributos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+  width: 100%;
+}
+
+.atributo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.atributo-input {
+  width: 70px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: 0;
+  border: #AEAEAE solid 2px;
 }
 
 section {

@@ -171,6 +171,10 @@ label {
   height: 30px;
 }
 
+.modal-input:focus {
+  box-shadow: 0 3px 3px #b43d3d;
+}
+
 .div-submit {
   display: flex;
   flex-direction: column;
@@ -342,6 +346,12 @@ header {
   padding: 15px;
   font-weight: bold;
   font-size: medium;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.criacao-submit:hover {
+  box-shadow: 0 0 0 0.15rem black;
 }
 
 section {

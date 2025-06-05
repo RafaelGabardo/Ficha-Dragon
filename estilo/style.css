@@ -248,9 +248,14 @@ header {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grupo-criacao {
+.grupo-criacao,
+.grupo-exp {
   display: flex;
   flex-direction: column;
+}
+
+.criacao-checkbox {
+  accent-color: #7E0000;
 }
 
 .criacao-label {
@@ -258,6 +263,24 @@ header {
   color: #505050;
   font-weight: bolder;
   font-size: 14.5px;
+}
+
+.exp-label {
+  margin-bottom: 0;
+  color: #505050;
+  font-weight: bolder;
+  font-size: 14.5px;
+}
+
+.grupo-exp-container {
+  display: flex;
+  gap: 38px; 
+  align-items: flex-start; 
+}
+
+.grupo-exp .form-input {
+  width: 100px;
+  height: 30px;
 }
 
 .criacao-input {
@@ -293,6 +316,7 @@ header {
 
 .criacao-select {
   height: 36px;
+  accent-color: #7E0000;
 }
 
 .div-form-atributos {

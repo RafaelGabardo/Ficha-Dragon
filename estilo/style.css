@@ -268,6 +268,10 @@ header {
   width: 250px;
 }
 
+.form-input:focus {
+  box-shadow: 0 3px 3px rgb(195, 194, 194);
+}
+
 .grupo-especie-customizada {
   grid-column: span 2;
   display: flex;
@@ -326,6 +330,10 @@ header {
   text-align: center;
 }
 
+.atributo-input:focus {
+  box-shadow: 0 3px 3px rgb(195, 194, 194);
+}
+
 .criacao-submit {
   background-color: #7E0000;
   color: white;
@@ -342,6 +350,107 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.section-dados {
+  display: flex;
+  align-items: center;
+  height: 20%;
+}
+
+.div-dados {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.div-quantidade {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-dados {
+  color: #505050;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.dados-input {
+  border-radius: 5px;
+  outline: 0;
+  border: #AEAEAE solid 2px;
+  height: 20px;
+  width: 100px;
+}
+
+.dados-input:focus {
+  box-shadow: 0 3px 3px rgb(195, 194, 194);
+}
+
+#imagem_d20 {
+  width: 110px;
+  height: 90px;
+}
+
+.section-rolagem {
+  display: flex;
+  height: 28%;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.div-rolagem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.div-botoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.botao-dado {
+  width: 80px;
+  height: 40px;
+  background-color: #7E0000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-dado:hover {
+  box-shadow: 0 0 0 0.15rem black;
+}
+
+#resultado {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+#card-resultado {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#resultado-dado {
+  font-size: xx-large;
+  font-weight: bold;
 }
 
 .secao {

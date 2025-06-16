@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,63 +53,27 @@
         </div>
       </li>
     </ul>
-    <ul class="list">
-      <li>
-        <a class="link" href="#">
-          <button class="button">Entrar</button>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="#">
-          <button class="button red">Cadastrar-se</button>
-        </a>
-      </li>
-    </ul>
+    <div class="div-nav">
+      <img class="img-nav" src="/assets/imagem_perfil.png" alt="Sua Imagem de Perfil">
+      <div class="dropdown">
+        <button class="button">
+          Minha Conta
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-perfil">
+          <a class="link-perfil" href="/paginas/perfil.html">Perfil</a>
+          <a class="link-perfil" href="#">Minhas FIchas</a>
+        <div class="vazio-perfil"></div>
+          <a id="sair" href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sair
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
   <main>
-    <div id="login-modal" class="modal">
-      <div class="modal-content login">
-        <div class="conserta-span">
-          <div class="caixa-span">
-            <span onclick="aperta_xis()" class="fechar-modal" id="fechar-login">&times;</span>
-          </div>  
-        </div>
-        <h2>Iniciar Sessão</h3>
-        <form action="#">
-          <label for="usuario">NOME DE USUÁRIO:</label><br>
-          <input class="modal-input" type="text" name="usuario" id="usuario"><br><br>
-          <label for="login-senha">SENHA:</label><br>
-          <input class="modal-input" type="password" name="login-senha" id="login-senha"><br><br>
-          <div class="div-submit">
-            <input class="submit" type="submit" name="login-submit" id="login-submit" value="INICIAR SESSÃO"><br>
-            <a class="link-login" href="#">Esqueceu sua senha?</a>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div id="cadastro-modal" class="modal">
-      <div class="modal-content cadastro">
-        <div class="conserta-span">
-          <div class="caixa-span">
-            <span onclick="aperta_xis()" class="fechar-modal">&times;</span>
-          </div>
-        </div>
-        <h2>Crie sua Conta</h3>
-        <form action="#" onsubmit="return validar_senha()">
-          <label for="nome">NOME DE USUÁRIO:</label><br>
-          <input class="modal-input" type="text" name="nome" id="nome" required><br><br>
-          <label for="email">EMAIL:</label><br>
-          <input class="modal-input" type="email" name="email" id="email" required><br><br>
-          <label for="cadastro-senha">CRIE SUA SENHA:</label><br>
-          <input class="modal-input" type="password" name="cadastro-senha" id="cadastro-senha" required><br><br>
-          <label for="confirmar-senha">CONFIRME SUA SENHA:</label><br>
-          <input class="modal-input" type="password" name="confirmar-senha" id="confirmar-senha" required><br><br>
-          <div class="div-submit">
-            <input class="submit" type="submit" name="cadastro-submit" id="cadastro-submit" value="CRIAR SUA CONTA">
-          </div>
-        </form>
-      </div>
-    </div>
+    
   </main>
   <footer>
     <div class="div-footer">

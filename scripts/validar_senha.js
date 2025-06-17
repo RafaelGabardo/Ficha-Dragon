@@ -1,6 +1,8 @@
+// Declarando a variável senha e o padrão de validação
 let senha = document.getElementById('cadastro-senha');
 let padrao = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
 
+// Função para validar a senha
 function valida_senha() {
   let valor_senha = senha.value;
 

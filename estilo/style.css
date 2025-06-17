@@ -9,21 +9,21 @@
 }
 
 body {
-  padding: 0;
+  padding: 0; 
   margin: 0;
-  outline: 0;
+  outline: 0; 
   width: 100%;
   height: 100dvh;
-  color: black;
+  color: black; 
   display: flex;
   flex-direction: column;
-  background-size: cover;
   font-family: fonte_corpo;
 }
 
 #body-index {
   background-color: black;
   background-image: url(/assets/index_imagem_fundo.png);
+  background-size: cover;
 }
 
 #body-form {
@@ -169,7 +169,6 @@ main {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
   background-color: rgb(255, 255, 255, 0.2);
   backdrop-filter: blur(1px);
   justify-content: center;
@@ -204,7 +203,6 @@ main {
 
 .fechar-modal {
   color: black;
-  float: right;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
@@ -309,7 +307,7 @@ td, th {
   border-radius: 7px;
   border: none;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .botao-crud:hover {
@@ -380,7 +378,7 @@ td, th {
 .grupo-exp-container {
   display: flex;
   gap: 38px; 
-  align-items: flex-start; 
+  align-items: start; 
 }
 
 .grupo-exp .form-input {
@@ -421,7 +419,6 @@ td, th {
 
 .criacao-select {
   height: 36px;
-  accent-color: #7E0000;
 }
 
 .div-form-atributos {

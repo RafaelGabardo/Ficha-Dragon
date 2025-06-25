@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +11,7 @@
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
   <title>Criação de Personagens</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
@@ -52,21 +53,169 @@
         </div>
       </li>
     </ul>
-    <ul class="list">
-      <li>
-        <a class="link" href="#">
-          <button class="button">Entrar</button>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="#">
-          <button class="button red">Cadastrar-se</button>
-        </a>
-      </li>
-    </ul>
+    <div class="div-nav">
+      <img class="img-nav" src="/assets/imagem_perfil.png" alt="Sua Imagem de Perfil">
+      <div class="dropdown">
+        <button class="button">
+          Minha Conta
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-perfil">
+          <a class="link-perfil" href="/paginas/perfil.html">Perfil</a>
+          <a class="link-perfil" href="#">Minhas Fichas</a>
+          <a class="link-perfil" href="crud.html">Crud</a>
+        <div class="vazio-perfil"></div>
+          <a id="sair" href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sair
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
-  <main>
-
+  <header>
+    <h1 class="titulo-criacao">CRIAÇÃO DE PERSONAGEM: 5.5e</h1>
+    <h2 class="subtitulo-criacao">Melhore a diversidade da sua jornada!</h2>
+  </header>
+  <main id="main-criacao">
+    <form class="form-gerar" action="#">
+      <div class="form-criacao">
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nome-personagem">Nome do Personagem:</label>
+          <input class="criacao-input form-input" required type="text" name="nome-personagem" id="nome-personagem">
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nome-jogador">Nome do Jogador:</label>
+          <input class="criacao-input form-input" required type="text" name="nome-jogador" id="nome-jogador">
+        </div>
+        <div class="grupo-especie-customizada">
+          <input class="criacao-checkbox" type="checkbox" name="checkbox" id="checkbox">
+          <label class="criacao-label" for="especie-customizada">Espécie Customizada</label>
+          <input class="disabled-input form-input" type="text" name="especie-customizada" id="especie-customizada" disabled>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="classe">Classe:</label>
+          <select class="criacao-select form-input" name="classe" id="classe">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Bárbaro">Bárbaro</option>
+            <option value="Bardo">Bardo</option>
+            <option value="Bruxo">Bruxo</option>
+            <option value="Clérigo">Clérigo</option>
+            <option value="Druida">Druida</option>
+            <option value="Feiticeiro">Feiticeiro</option>
+            <option value="Guardião">Guardião</option>
+            <option value="Guerreiro">Guerreiro</option>
+            <option value="Ladino">Ladino</option>
+            <option value="Mago">Mago</option>
+            <option value="Monge">Monge</option>
+            <option value="Paladino">Paladino</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="especie">Espécie:</label>
+          <select class="criacao-select form-input" required name="especie" id="especie">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Aasimar">Aasimar</option>
+            <option value="Anão">Anão</option>
+            <option value="Draconato">Draconato</option>
+            <option value="Elfo">Elfo</option>
+            <option value="Gnomo">Gnomo</option>
+            <option value="Golias">Golias</option>
+            <option value="Humano">Humano</option>
+            <option value="Orc">Orc</option>
+            <option value="Pequenino">Pequenino</option>
+            <option value="Tiferino">Tiferino</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="alinhamento">Alinhamento:</label>
+          <select class="criacao-select form-input" required name="alinhamento" id="alinhamento">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Orediro e Bom">Ordeiro e Bom</option>
+            <option value="Caótico e Bom">Caótico e Bom</option>
+            <option value="Neutro e Bom">Neutro e Bom</option>
+            <option value="Ordeiro e Neutro">Ordeiro e Neutro</option>
+            <option value="Neutro">Neutro</option>
+            <option value="Caótico e Neutro">Caótico e Neutro</option>
+            <option value="Neutro e Mau">Neutro e Mau</option>
+            <option value="Oredeiro e Mau">Ordeiro e Mau</option>
+            <option value="Caótico e Mau">Caótico e Mau</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="antecedente">Antecedente:</label>
+          <select class="criacao-select form-input" name="antecedente" id="antecedente">
+            <option value="Selecionar">Selecionar</option>
+            <option value="Acólito">Acólito</option>
+            <option value="Artesão">Artesão</option>
+            <option value="Artista">Artista</option>
+            <option value="Charlatão">Charlatão</option>
+            <option value="Criminoso">Criminoso</option>
+            <option value="Eremita">Eremita</option>
+            <option value="Escriba">Escriba</option>
+            <option value="Fazendeiro">Fazendeiro</option>
+            <option value="Guarda">Guarda</option>
+            <option value="Guia">Guia</option>
+            <option value="Marinheiro">Marinheiro</option>
+            <option value="Mercador">Mercador</option>
+            <option value="Nobre">Nobre</option>
+            <option value="Sábio">Sábio</option>
+            <option value="Soldado">Soldado</option>
+            <option value="Viajante">Viajante</option>
+          </select>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="nivel">Nível:</label>
+          <input class="criacao-input form-input" type="number" name="nivel" id="nivel">
+        </div>
+        <div class="grupo-exp-container">
+          <div class="grupo-exp">
+            <label class="criacao-label" for="expA">Exp Atual:</label>
+            <input class="criacao-input form-input" type="number" name="expa" id="expa">
+          </div>
+          <div class="grupo-exp">
+            <label class="criacao-label" for="expM">Exp Máxima:</label>
+            <input class="criacao-input form-input" type="number" name="expm" id="expm">
+          </div>
+        </div>
+        <div class="grupo-criacao">
+          <label class="criacao-label" for="genero">Gênero:</label>
+          <input class="criacao-input form-input" type="text" name="genero" id="genero">
+        </div>
+      </div>
+      <div class="div-form-atributos">
+        <h3 class="titulo-atributos">Distribuição de Atributos</h3>
+        <div class="div-atributos">
+          <div class="atributo">
+            <label class="criacao-label" for="forca">FOR</label>
+            <input class="atributo-input" type="number" name="forca" id="forca">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="destreza">DEX</label>
+            <input class="atributo-input" type="number" name="destreza" id="destreza">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="constituição">CON</label>
+            <input class="atributo-input" type="number" name="constituicao" id="constituicao">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="inteligencia">INT</label>
+            <input class="atributo-input" type="number" name="inteligencia" id="inteligencia">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="sabedoria">SAB</label>
+            <input class="atributo-input" type="number" name="sabedoria" id="sabedoria">
+          </div>
+          <div class="atributo">
+            <label class="criacao-label" for="carisma">CAR</label>
+            <input class="atributo-input" type="number" name="carisma" id="carisma">
+          </div>
+        </div>
+      </div>
+      <div class="form-botao">
+        <input class="criacao-submit" type="submit" name="criacao-submit" id="criacao-submit">
+      </div>
+    </form>
   </main>
   <footer>
     <div class="div-footer">
@@ -112,5 +261,6 @@
       </ul>
     </div>
   </footer>
+  <script src="/scripts/especie_customizada.js"></script>
 </body>
 </html>

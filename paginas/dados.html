@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
-  <title>Criação de Personagens</title>
+  <title>Dados</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
@@ -51,22 +52,64 @@
           </div>
         </div>
       </li>
-    </ul>
-    <ul class="list">
-      <li>
-        <a class="link" href="#">
-          <button class="button">Entrar</button>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="#">
-          <button class="button red">Cadastrar-se</button>
-        </a>
-      </li>
-    </ul>
+    </ul><div class="div-nav">
+      <img class="img-nav" src="/assets/imagem_perfil.png" alt="Sua Imagem de Perfil">
+      <div class="dropdown">
+        <button class="button">
+          Minha Conta
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-perfil">
+          <a class="link-perfil" href="/paginas/perfil.html">Perfil</a>
+          <a class="link-perfil" href="#">Minhas Fichas</a>
+          <a class="link-perfil" href="crud.html">Crud</a>
+        <div class="vazio-perfil"></div>
+          <a id="sair" href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sair
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
   <main>
-
+    <header>
+      <h1 class="titulo-criacao">JOGUE OS DADOS</h1>
+      <h2 class="subtitulo-criacao">Role os dados e forje seu destino!</h2>
+    </header>
+    <section CLASS="section-dados">
+      <div class="div-dados">
+        <div class="div-quantidade">
+          <label id="label-dados" for="quantidade">Quantidade de dados</label>
+          <input class="dados-input" type="number" name="quantidade" id="quantidade" value="1" min="1">
+        </div>
+        <div class="div-quantidade">
+          <img id="imagem_d20" src="/assets/imagem_d20.png" alt="imagem_d20">
+        </div>
+      </div>
+    </section>
+    <section class="section-rolagem">
+      <div class="div-rolagem">
+        <div class="div-titulo-dados">
+          <h3 class="escolha-dado">ESCOLHA SEU DADO:</h3>
+        </div>
+        <div class="div-botoes">
+          <button class="botao-dado" id="d4" onclick="rolar_dado(4)">D4</button>
+          <button class="botao-dado" id="d6" onclick="rolar_dado(6)">D6</button>
+          <button class="botao-dado" id="d8" onclick="rolar_dado(8)">D8</button>
+          <button class="botao-dado" id="d10" onclick="rolar_dado(10)">D10</button>
+          <button class="botao-dado" id="d12" onclick="rolar_dado(12)">D12</button>
+          <button class="botao-dado" id="d20" onclick="rolar_dado(20)">D20</button>
+          <button class="botao-dado" id="d100" onclick="rolar_dado(100)">D100</button>
+        </div>
+      </div>
+    </section>
+    <section id="resultado">
+      <p id="resultado-cada-dado">Resultado:</p>
+      <div id="card-resultado">
+        <h1 id="resultado-dado">0</h1>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="div-footer">
@@ -112,5 +155,6 @@
       </ul>
     </div>
   </footer>
+  <script src="/scripts/dados.js"></script>
 </body>
 </html>

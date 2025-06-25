@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,20 +53,27 @@
         </div>
       </li>
     </ul>
-    <ul class="list">
-      <li>
-        <a class="link" href="#">
-          <button class="button">Entrar</button>
-        </a>
-      </li>
-      <li>
-        <a class="link" href="#">
-          <button class="button red">Cadastrar-se</button>
-        </a>
-      </li>
-    </ul>
+    <div class="div-nav">
+      <img class="img-nav" src="/assets/imagem_perfil.png" alt="Sua Imagem de Perfil">
+      <div class="dropdown">
+        <button class="button">
+          Minha Conta
+          <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-perfil">
+          <a class="link-perfil" href="/paginas/perfil.html">Perfil</a>
+          <a class="link-perfil" href="#">Minhas Fichas</a>
+          <a class="link-perfil" href="crud.html">Crud</a>
+        <div class="vazio-perfil"></div>
+          <a id="sair" href="#">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sair
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
-  <main id="main-criacao">
+  <main>
     <header>
       <h1 class="titulo-criacao">CRIAÇÃO DE NPC D&D 5.5e</h1>
       <h2 class="subtitulo-criacao">Melhore a diversidade da sua jornada!</h2>
@@ -154,7 +162,7 @@
         </div>
         <div class="grupo-criacao">
           <label class="criacao-label" for="nivel">Nível:</label>
-          <input class="criacao-input form-input" type="number" name="nivel" id="nivel">
+          <input class="criacao-input form-input" type="number" name="nivel" id="nivel" max="20" min="0">
         </div>
         <div class="grupo-criacao">
           <label class="criacao-label" for="genero">Gênero:</label>
@@ -189,6 +197,9 @@
             <input class="atributo-input" type="number" name="carisma" id="carisma">
           </div>
         </div>
+      </div>
+      <div class="form-botao">
+        <input class="criacao-submit" type="submit" name="criacao-submit" id="criacao-submit">
       </div>
     </form>
   </main>
@@ -240,7 +251,6 @@
 </body>
 </html>
 
-
 <!--
 opções de subraças:
 elfo drow, silvestre e alto elfo, golias do fogo, colina,
@@ -248,6 +258,4 @@ tempestade, gelo, nuvem e pedra, tiferino abissal,
 catônico e infernal, gnomo da floresta e da rocha;
 
 apenas humanos têm a opção de pegar um talento de origem;
-
-fazer o input desabilitado se tornar normal quando o checkbox for ativado;
 -->

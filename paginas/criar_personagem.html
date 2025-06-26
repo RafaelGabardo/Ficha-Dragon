@@ -73,149 +73,305 @@
       </div>
     </div>
   </nav>
-  <header>
-    <h1 class="titulo-criacao">CRIAÇÃO DE PERSONAGEM: 5.5e</h1>
-    <h2 class="subtitulo-criacao">Melhore a diversidade da sua jornada!</h2>
-  </header>
-  <main id="main-criacao">
-    <form class="form-gerar" action="#">
-      <div class="form-criacao">
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="nome-personagem">Nome do Personagem:</label>
-          <input class="criacao-input form-input" required type="text" name="nome-personagem" id="nome-personagem">
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="nome-jogador">Nome do Jogador:</label>
-          <input class="criacao-input form-input" required type="text" name="nome-jogador" id="nome-jogador">
-        </div>
-        <div class="grupo-especie-customizada">
-          <input class="criacao-checkbox" type="checkbox" name="checkbox" id="checkbox">
-          <label class="criacao-label" for="especie-customizada">Espécie Customizada</label>
-          <input class="disabled-input form-input" type="text" name="especie-customizada" id="especie-customizada" disabled>
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="classe">Classe:</label>
-          <select class="criacao-select form-input" name="classe" id="classe">
-            <option value="Selecionar">Selecionar</option>
-            <option value="Bárbaro">Bárbaro</option>
-            <option value="Bardo">Bardo</option>
-            <option value="Bruxo">Bruxo</option>
-            <option value="Clérigo">Clérigo</option>
-            <option value="Druida">Druida</option>
-            <option value="Feiticeiro">Feiticeiro</option>
-            <option value="Guardião">Guardião</option>
-            <option value="Guerreiro">Guerreiro</option>
-            <option value="Ladino">Ladino</option>
-            <option value="Mago">Mago</option>
-            <option value="Monge">Monge</option>
-            <option value="Paladino">Paladino</option>
-          </select>
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="especie">Espécie:</label>
-          <select class="criacao-select form-input" required name="especie" id="especie">
-            <option value="Selecionar">Selecionar</option>
-            <option value="Aasimar">Aasimar</option>
-            <option value="Anão">Anão</option>
-            <option value="Draconato">Draconato</option>
-            <option value="Elfo">Elfo</option>
-            <option value="Gnomo">Gnomo</option>
-            <option value="Golias">Golias</option>
-            <option value="Humano">Humano</option>
-            <option value="Orc">Orc</option>
-            <option value="Pequenino">Pequenino</option>
-            <option value="Tiferino">Tiferino</option>
-          </select>
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="alinhamento">Alinhamento:</label>
-          <select class="criacao-select form-input" required name="alinhamento" id="alinhamento">
-            <option value="Selecionar">Selecionar</option>
-            <option value="Orediro e Bom">Ordeiro e Bom</option>
-            <option value="Caótico e Bom">Caótico e Bom</option>
-            <option value="Neutro e Bom">Neutro e Bom</option>
-            <option value="Ordeiro e Neutro">Ordeiro e Neutro</option>
-            <option value="Neutro">Neutro</option>
-            <option value="Caótico e Neutro">Caótico e Neutro</option>
-            <option value="Neutro e Mau">Neutro e Mau</option>
-            <option value="Oredeiro e Mau">Ordeiro e Mau</option>
-            <option value="Caótico e Mau">Caótico e Mau</option>
-          </select>
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="antecedente">Antecedente:</label>
-          <select class="criacao-select form-input" name="antecedente" id="antecedente">
-            <option value="Selecionar">Selecionar</option>
-            <option value="Acólito">Acólito</option>
-            <option value="Artesão">Artesão</option>
-            <option value="Artista">Artista</option>
-            <option value="Charlatão">Charlatão</option>
-            <option value="Criminoso">Criminoso</option>
-            <option value="Eremita">Eremita</option>
-            <option value="Escriba">Escriba</option>
-            <option value="Fazendeiro">Fazendeiro</option>
-            <option value="Guarda">Guarda</option>
-            <option value="Guia">Guia</option>
-            <option value="Marinheiro">Marinheiro</option>
-            <option value="Mercador">Mercador</option>
-            <option value="Nobre">Nobre</option>
-            <option value="Sábio">Sábio</option>
-            <option value="Soldado">Soldado</option>
-            <option value="Viajante">Viajante</option>
-          </select>
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="nivel">Nível:</label>
-          <input class="criacao-input form-input" type="number" name="nivel" id="nivel">
-        </div>
-        <div class="grupo-exp-container">
-          <div class="grupo-exp">
-            <label class="criacao-label" for="expA">Exp Atual:</label>
-            <input class="criacao-input form-input" type="number" name="expa" id="expa">
-          </div>
-          <div class="grupo-exp">
-            <label class="criacao-label" for="expM">Exp Máxima:</label>
-            <input class="criacao-input form-input" type="number" name="expm" id="expm">
-          </div>
-        </div>
-        <div class="grupo-criacao">
-          <label class="criacao-label" for="genero">Gênero:</label>
-          <input class="criacao-input form-input" type="text" name="genero" id="genero">
-        </div>
-      </div>
-      <div class="div-form-atributos">
-        <h3 class="titulo-atributos">Distribuição de Atributos</h3>
-        <div class="div-atributos">
-          <div class="atributo">
-            <label class="criacao-label" for="forca">FOR</label>
-            <input class="atributo-input" type="number" name="forca" id="forca">
-          </div>
-          <div class="atributo">
-            <label class="criacao-label" for="destreza">DEX</label>
-            <input class="atributo-input" type="number" name="destreza" id="destreza">
-          </div>
-          <div class="atributo">
-            <label class="criacao-label" for="constituição">CON</label>
-            <input class="atributo-input" type="number" name="constituicao" id="constituicao">
-          </div>
-          <div class="atributo">
-            <label class="criacao-label" for="inteligencia">INT</label>
-            <input class="atributo-input" type="number" name="inteligencia" id="inteligencia">
-          </div>
-          <div class="atributo">
-            <label class="criacao-label" for="sabedoria">SAB</label>
-            <input class="atributo-input" type="number" name="sabedoria" id="sabedoria">
-          </div>
-          <div class="atributo">
-            <label class="criacao-label" for="carisma">CAR</label>
-            <input class="atributo-input" type="number" name="carisma" id="carisma">
-          </div>
-        </div>
-      </div>
-      <div class="form-botao">
-        <input class="criacao-submit" type="submit" name="criacao-submit" id="criacao-submit">
-      </div>
-    </form>
+  <main class="container-principal-personagem">
+    <header>
+        <h1 class="titulo-criacao">CRIAÇÃO DE PERSONAGEM</h1>
+        <h2 class="subtitulo-criacao">O início da sua jornada começa aqui!</h2>
+    </header>
+    <section class="secao-formulario-personagem">
+        <form id="form-criar-personagem">
+
+            <fieldset class="form-section">
+                <legend>Informações Básicas</legend>
+                <div class="form-row">
+                    <div class="form-group-triple">
+                        <label for="nome-personagem">Nome do Personagem</label>
+                        <input type="text" id="nome-personagem" name="nome-personagem" placeholder="Ex: Eldrin Lançaviva">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome-jogador">Seu Nome (Jogador)</label>
+                        <input type="text" id="nome-jogador" name="nome-jogador" placeholder="Ex: João">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="classe">Classe</label>
+                        <select id="classe" name="classe">
+                            <option value="">Selecione</option>
+                            <option value="Bárbaro">Bárbaro</option>
+                            <option value="Bardo">Bardo</option>
+                            <option value="Bruxo">Bruxo</option>
+                            <option value="Clérigo">Clérigo</option>
+                            <option value="Druida">Druida</option>
+                            <option value="Feiticeiro">Feiticeiro</option>
+                            <option value="Guardião">Guardião</option>
+                            <option value="Guerreiro">Guerreiro</option>
+                            <option value="Ladino">Ladino</option>
+                            <option value="Mago">Mago</option>
+                            <option value="Monge">Monge</option>
+                            <option value="Paladino">Paladino</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="subclasse">Subclasse</label>
+                        <input type="text" id="subclasse" name="subclasse" placeholder="Definido no jogo">
+                    </div>
+                    <div class="form-group">
+                        <label for="especie">Espécie</label>
+                        <select id="especie" name="especie">
+                            <option value="">Selecione</option>
+                            <option value="Aasimar">Aasimar</option>
+                            <option value="Anão">Anão</option>
+                            <option value="Draconato">Draconato</option>
+                            <option value="Elfo">Elfo</option>
+                            <option value="Gnomo">Gnomo</option>
+                            <option value="Golias">Golias</option>
+                            <option value="Humano">Humano</option>
+                            <option value="Orc">Orc</option>
+                            <option value="Pequenino">Pequenino</option>
+                            <option value="Tiferino">Tiferino</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="antecedente">Antecedente</label>
+                        <select id="antecedente" name="antecedente">
+                            <option value="">Selecione</option>
+                            <option value="Acólito">Acólito</option>
+                            <option value="Artesão">Artesão</option>
+                            <option value="Artista">Artista</option>
+                            <option value="Charlatão">Charlatão</option>
+                            <option value="Criminoso">Criminoso</option>
+                            <option value="Eremita">Eremita</option>
+                            <option value="Escriba">Escriba</option>
+                            <option value="Fazendeiro">Fazendeiro</option>
+                            <option value="Guarda">Guarda</option>
+                            <option value="Guia">Guia</option>
+                            <option value="Marinheiro">Marinheiro</option>
+                            <option value="Mercador">Mercador</option>
+                            <option value="Nobre">Nobre</option>
+                            <option value="Sábio">Sábio</option>
+                            <option value="Soldado">Soldado</option>
+                            <option value="Viajante">Viajante</option>
+                        </select>
+                    </div>
+                </div>
+                 <div class="form-row">
+                    <div class="form-group-small">
+                        <label for="nivel">Nível</label>
+                        <input type="number" id="nivel" name="nivel" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="xp">Pontos de Experiência (XP)</label>
+                        <input type="number" id="xp" name="xp" min="0" value="0">
+                    </div>
+                     <div class="form-group">
+                        <label for="alinhamento">Alinhamento</label>
+                        <select id="alinhamento" name="alinhamento">
+                            <option value="">Selecione</option>
+                            <option value="Orediro e Bom">Ordeiro e Bom</option>
+                            <option value="Caótico e Bom">Caótico e Bom</option>
+                            <option value="Neutro e Bom">Neutro e Bom</option>
+                            <option value="Ordeiro e Neutro">Ordeiro e Neutro</option>
+                            <option value="Neutro">Neutro</option>
+                            <option value="Caótico e Neutro">Caótico e Neutro</option>
+                            <option value="Neutro e Mau">Neutro e Mau</option>
+                            <option value="Oredeiro e Mau">Ordeiro e Mau</option>
+                            <option value="Caótico e Mau">Caótico e Mau</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="tamanho">Tamanho</label>
+                        <select id="tamanho" name="tamanho"><option value="Médio">Médio</option><option value="Pequeno">Pequeno</option></select>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Atributos e Perícias</legend>
+                <div class="atributos-pericias-grid">
+                    <div class="atributos-coluna">
+                        <div class="atributo-item">
+                            <label for="for" class="atributo-label">Força</label>
+                            <input type="number" id="for" name="for" class="atributo-valor" min="1" max="20" value="10">
+                            <div class="salvaguarda-item">
+                                <input type="checkbox" id="salvaguarda-for-prof" name="salvaguarda-for-prof">
+                                <label for="salvaguarda-for-prof">Salvaguarda</label>
+                                <input type="number" id="salvaguarda-for-valor" name="salvaguarda-for-valor" class="input-modificador" value="0">
+                            </div>
+                        </div>
+                        <div class="atributo-item">
+                            <label for="des" class="atributo-label">Destreza</label>
+                            <input type="number" id="des" name="des" class="atributo-valor" min="1" max="20" value="10">
+                            <div class="salvaguarda-item">
+                                <input type="checkbox" id="salvaguarda-des-prof" name="salvaguarda-des-prof">
+                                <label for="salvaguarda-des-prof">Salvaguarda</label>
+                                <input type="number" id="salvaguarda-des-valor" name="salvaguarda-des-valor" class="input-modificador" value="0">
+                            </div>
+                        </div>
+                        <div class="atributo-item">
+                            <label for="con" class="atributo-label">Constituição</label>
+                            <input type="number" id="con" name="con" class="atributo-valor" min="1" max="20" value="10">
+                            <div class="salvaguarda-item">
+                                <input type="checkbox" id="salvaguarda-con-prof" name="salvaguarda-con-prof">
+                                <label for="salvaguarda-con-prof">Salvaguarda</label>
+                                <input type="number" id="salvaguarda-con-valor" name="salvaguarda-con-valor" class="input-modificador" value="0">
+                            </div>
+                        </div>
+                        <div class="atributo-item">
+                            <label for="int" class="atributo-label">Inteligência</label>
+                            <input type="number" id="int" name="int" class="atributo-valor" min="1" max="20" value="10">
+                            <div class="salvaguarda-item">
+                                <input type="checkbox" id="salvaguarda-int-prof" name="salvaguarda-int-prof">
+                                <label for="salvaguarda-int-prof">Salvaguarda</label>
+                                <input type="number" id="salvaguarda-int-valor" name="salvaguarda-int-valor" class="input-modificador" value="0">
+                            </div>
+                        </div>
+                        <div class="atributo-item">
+                            <label for="sab" class="atributo-label">Sabedoria</label>
+                            <input type="number" id="sab" name="sab" class="atributo-valor" min="1" max="20" value="10">
+                            <div class="salvaguarda-item">
+                                <input type="checkbox" id="salvaguarda-sab-prof" name="salvaguarda-sab-prof">
+                                <label for="salvaguarda-sab-prof">Salvaguarda</label>
+                                <input type="number" id="salvaguarda-sab-valor" name="salvaguarda-sab-valor" class="input-modificador" value="0">
+                            </div>
+                        </div>
+                        <div class="atributo-item">
+                            <label for="car" class="atributo-label">Carisma</label>
+                            <input type="number" id="car" name="car" class="atributo-valor" min="1" max="20" value="10">
+                            <div class="salvaguarda-item">
+                                <input type="checkbox" id="salvaguarda-car-prof" name="salvaguarda-car-prof">
+                                <label for="salvaguarda-car-prof">Salvaguarda</label>
+                                <input type="number" id="salvaguarda-car-valor" name="salvaguarda-car-valor" class="input-modificador" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pericias-coluna">
+                        <p class="pericias-titulo">Proficiência em Perícias</p>
+                        <div class="pericias-lista">
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-atletismo" name="pericia-atletismo"><label for="pericia-atletismo">Atletismo (FOR)</label></div><input type="number" class="input-modificador" name="pericia-atletismo-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-acrobacia" name="pericia-acrobacia"><label for="pericia-acrobacia">Acrobacia (DES)</label></div><input type="number" class="input-modificador" name="pericia-acrobacia-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-furtividade" name="pericia-furtividade"><label for="pericia-furtividade">Furtividade (DES)</label></div><input type="number" class="input-modificador" name="pericia-furtividade-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-prestidigitacao" name="pericia-prestidigitacao"><label for="pericia-prestidigitacao">Prestidigitação (DES)</label></div><input type="number" class="input-modificador" name="pericia-prestidigitacao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-arcanismo" name="pericia-arcanismo"><label for="pericia-arcanismo">Arcanismo (INT)</label></div><input type="number" class="input-modificador" name="pericia-arcanismo-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-historia" name="pericia-historia"><label for="pericia-historia">História (INT)</label></div><input type="number" class="input-modificador" name="pericia-historia-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-investigacao" name="pericia-investigacao"><label for="pericia-investigacao">Investigação (INT)</label></div><input type="number" class="input-modificador" name="pericia-investigacao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-natureza" name="pericia-natureza"><label for="pericia-natureza">Natureza (INT)</label></div><input type="number" class="input-modificador" name="pericia-natureza-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-religiao" name="pericia-religiao"><label for="pericia-religiao">Religião (INT)</label></div><input type="number" class="input-modificador" name="pericia-religiao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-animais" name="pericia-animais"><label for="pericia-animais">Lidar com Animais (SAB)</label></div><input type="number" class="input-modificador" name="pericia-animais-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-intuicao" name="pericia-intuicao"><label for="pericia-intuicao">Intuição (SAB)</label></div><input type="number" class="input-modificador" name="pericia-intuicao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-medicina" name="pericia-medicina"><label for="pericia-medicina">Medicina (SAB)</label></div><input type="number" class="input-modificador" name="pericia-medicina-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-percepcao" name="pericia-percepcao"><label for="pericia-percepcao">Percepção (SAB)</label></div><input type="number" class="input-modificador" name="pericia-percepcao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-sobrevivencia" name="pericia-sobrevivencia"><label for="pericia-sobrevivencia">Sobrevivência (SAB)</label></div><input type="number" class="input-modificador" name="pericia-sobrevivencia-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-atuacao" name="pericia-atuacao"><label for="pericia-atuacao">Atuação (CAR)</label></div><input type="number" class="input-modificador" name="pericia-atuacao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-enganacao" name="pericia-enganacao"><label for="pericia-enganacao">Enganação (CAR)</label></div><input type="number" class="input-modificador" name="pericia-enganacao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-intimidacao" name="pericia-intimidacao"><label for="pericia-intimidacao">Intimidação (CAR)</label></div><input type="number" class="input-modificador" name="pericia-intimidacao-valor" value="0"></div>
+                            <div class="pericia-item"><div class="pericia-nome"><input type="checkbox" id="pericia-persuasao" name="pericia-persuasao"><label for="pericia-persuasao">Persuasão (CAR)</label></div><input type="number" class="input-modificador" name="pericia-persuasao-valor" value="0"></div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Informações de Combate</legend>
+                 <div class="form-row">
+                    <div class="form-group-small">
+                        <label for="ca">Classe de Armadura</label>
+                        <input type="number" id="ca" name="ca" min="0" value="10">
+                    </div>
+                    <div class="form-group-small">
+                        <label for="iniciativa">Iniciativa</label>
+                        <input type="number" id="iniciativa" name="iniciativa" value="0">
+                    </div>
+                     <div class="form-group-small">
+                        <label for="deslocamento">Deslocamento</label>
+                        <input type="text" id="deslocamento" name="deslocamento" value="9m">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pv-max">Pontos de Vida (Máx)</label>
+                        <input type="number" id="pv-max" name="pv-max" min="1" value="10">
+                    </div>
+                    <div class="form-group">
+                        <label for="pv-temp">Pontos de Vida (Temp)</label>
+                        <input type="number" id="pv-temp" name="pv-temp" min="0" value="0" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="dados-vida">Dados de Vida</label>
+                        <input type="text" id="dados-vida" name="dados-vida" placeholder="Ex: 1d8">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Equipamentos e Proficiências</legend>
+                 <div class="form-group">
+                    <label>Proficiência com Armaduras</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item"><input type="checkbox" id="prof-arm-leve" name="prof-arm-leve"><label for="prof-arm-leve">Leve</label></div>
+                        <div class="checkbox-item"><input type="checkbox" id="prof-arm-media" name="prof-arm-media"><label for="prof-arm-media">Média</label></div>
+                        <div class="checkbox-item"><input type="checkbox" id="prof-arm-pesada" name="prof-arm-pesada"><label for="prof-arm-pesada">Pesada</label></div>
+                        <div class="checkbox-item"><input type="checkbox" id="prof-escudos" name="prof-escudos"><label for="prof-escudos">Escudos</label></div>
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="prof-armas">Proficiência com Armas</label>
+                    <textarea id="prof-armas" name="prof-armas" rows="2" placeholder="Ex: Armas simples, espadas longas..."></textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="prof-ferramentas">Proficiência com Ferramentas</label>
+                    <textarea id="prof-ferramentas" name="prof-ferramentas" rows="2" placeholder="Ex: Ferramentas de ladrão, kit de disfarces..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="idiomas">Idiomas</label>
+                    <textarea id="idiomas" name="idiomas" rows="2" placeholder="Ex: Comum, Élfico..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="equipamento">Equipamento Inicial</label>
+                    <textarea id="equipamento" name="equipamento" rows="4" placeholder="Liste aqui os itens que seu personagem está carregando."></textarea>
+                </div>
+                 <div class="form-row">
+                    <p>Moedas:</p>
+                    <div class="form-group-coin"><label for="moedas-pc">PC</label><input type="number" id="moedas-pc" name="moedas-pc" value="0"></div>
+                    <div class="form-group-coin"><label for="moedas-pp">PP</label><input type="number" id="moedas-pp" name="moedas-pp" value="0"></div>
+                    <div class="form-group-coin"><label for="moedas-po">PO</label><input type="number" id="moedas-po" name="moedas-po" value="0"></div>
+                    <div class="form-group-coin"><label for="moedas-pl">PL</label><input type="number" id="moedas-pl" name="moedas-pl" value="0"></div>
+                </div>
+            </fieldset>
+
+            <fieldset class="form-section">
+                <legend>Personalidade e História</legend>
+                <div class="form-group">
+                    <label for="tracos-personalidade">Traços de Personalidade</label>
+                    <textarea id="tracos-personalidade" name="tracos-personalidade" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ideais">Ideais</label>
+                    <textarea id="ideais" name="ideais" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="vinculos">Vínculos</label>
+                    <textarea id="vinculos" name="vinculos" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="defeitos">Defeitos</label>
+                    <textarea id="defeitos" name="defeitos" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="historia-personagem">História do Personagem</label>
+                    <textarea id="historia-personagem" name="historia-personagem" rows="6"></textarea>
+                </div>
+                 <div class="form-group">
+                    <label for="aparencia-personagem">Aparência do Personagem</label>
+                    <textarea id="aparencia-personagem" name="aparencia-personagem" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="button" id="btn-salvar-personagem" class="btn-avancar">Avançar para Salvar</button>
+            </div>
+        </form>
+    </section>
   </main>
   <footer>
     <div class="div-footer">

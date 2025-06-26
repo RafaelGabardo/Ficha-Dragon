@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo do Personagem - Ficha Dragon</title>
+  <link rel="stylesheet" href="/estilo/style.css">
+  <link rel="stylesheet" href="/estilo/css/resumo_personagem.css">
+  <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="page-resumo">
+    <nav>
+        <ul class="list">
+          <li><a class="link" href="../index.html">Início</a></li>
+          <li><a class="link" href="#">Personagem</a></li>
+          <li>
+            <div class="dropdown">
+              <span>Gerar</span><i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-content">
+                <ul class="list-dropdown">
+                  <li><a class="link-dropdown" href="#">Monstros</a></li>
+                  <li><a class="link-dropdown" href="#">NPC's</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <span>Aventura</span><i class="fa-solid fa-caret-down"></i>
+              <div class="dropdown-content">
+                <ul class="list-dropdown">
+                  <li><a class="link-dropdown" href="#">Meus Personagens</a></li>
+                  <li><a class="link-dropdown" href="#">Meu Grupo</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="list">
+          <li><a class="link" href="#"><button id="login" class="button">Entrar</button></a></li>
+          <li><a class="link" href="#"><button id="cadastro" class="button red">Cadastrar-se</button></a></li>
+        </ul>
+    </nav>
+
+    <main class="container-principal-resumo">
+        <div id="ficha-para-pdf">
+            <h1>Resumo do Personagem</h1>
+            <section class="resumo-secao">
+                <h2 id="nome-personagem-resumo">Nome do Personagem</h2>
+                <p>Criado por: <span id="nome-jogador-resumo"></span></p>
+                <div class="info-basica-grid">
+                    <p><strong>Classe:</strong> <span id="classe-resumo"></span></p>
+                    <p><strong>Espécie:</strong> <span id="especie-resumo"></span></p>
+                    <p><strong>Nível:</strong> <span id="nivel-resumo"></span></p>
+                    <p><strong>Antecedente:</strong> <span id="antecedente-resumo"></span></p>
+                </div>
+            </section>
+            <section class="resumo-secao combate-grid">
+                <div><strong>PV Máx:</strong> <span id="pv-resumo"></span></div>
+                <div><strong>CA:</strong> <span id="ca-resumo"></span></div>
+                <div><strong>Iniciativa:</strong> <span id="iniciativa-resumo"></span></div>
+            </section>
+            <section class="resumo-secao atributos-grid">
+                <div class="atributo-box"><strong>FOR</strong><span id="for-resumo"></span></div>
+                <div class="atributo-box"><strong>DES</strong><span id="des-resumo"></span></div>
+                <div class="atributo-box"><strong>CON</strong><span id="con-resumo"></span></div>
+                <div class="atributo-box"><strong>INT</strong><span id="int-resumo"></span></div>
+                <div class="atributo-box"><strong>SAB</strong><span id="sab-resumo"></span></div>
+                <div class="atributo-box"><strong>CAR</strong><span id="car-resumo"></span></div>
+            </section>
+            <section class="resumo-secao">
+                <h3>Perícias Proficientes</h3>
+                <ul id="lista-pericias-resumo"></ul>
+            </section>
+        </div>
+        <div class="acoes-resumo">
+            <button id="btn-salvar-conta" class="btn-acao primario">Salvar na Conta</button>
+            <button id="btn-download-pdf" class="btn-acao secundario">Download em PDF</button>
+        </div>
+    </main>
+    
+  <footer>
+    <div class="div-footer">
+      <h4>Geradores de Fichas</h4>
+      <ul class="list-footer">
+        <li>
+          <a class="link-footer" href="#">Gerador de Personagem</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Gerador de NPC</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Gerador de Monstro</a>
+        </li>
+      </ul>
+    </div>
+    <div class="div-footer">
+      <h4>Gerenciador de Fichas</h4>
+      <ul class="list-footer">
+        <li>
+          <a class="link-footer" href="#">Seus Personagens</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Seus NPC's</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Seus Monstros</a>
+        </li>
+      </ul>
+    </div>
+    <div class="div-footer">
+      <h4>Visualização de Aventura</h4>
+      <ul class="list-footer">
+        <li>
+          <a class="link-footer" href="#">Seu Grupo</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Sua Campanha</a>
+        </li>
+        <li>
+          <a class="link-footer" href="#">Seu Mestre</a>
+        </li>
+      </ul>
+    </div>
+  </footer> 
+
+    <script src="../scripts/resumo_script.js"></script>
+</body>
+</html>

@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
-  <title>Grupo</title>
+  <title>Aventura</title>
 </head>
 <body id="body-form">
   <nav>
@@ -73,9 +72,77 @@
       </div>
     </div>
   </nav>
-  <main>
-    
+  <main class="container-principal-grupo">
+    <header>
+      <h1 class="titulo-criacao">SEU GRUPO</h1>
+      <h2 class="subtitulo-criacao">Seus amigos mais próximos de você!</h2>
+    </header>
+
+    <div class="grupo-container">
+      <button id="btn-abrir-modal-add" class="btn-adicionar">Adicionar +</button>
+
+      <div class="lista-membros">
+        <div class="membro-item">
+          <img src="/assets/imagem_perfil.png" alt="Avatar" class="membro-avatar">
+          <div class="membro-info">
+            <p class="info-jogador">Nome do Jogador:</p>
+            <p class="info-usuario">Nome do Usuário</p>
+          </div>
+          <div class="membro-acoes">
+            <button class="btn-visualizar">Visualizar</button>
+            <button class="btn-remover">X</button>
+          </div>
+        </div>
+        <div class="membro-item">
+            <img src="/assets/imagem_perfil.png" alt="Avatar" class="membro-avatar">
+            <div class="membro-info">
+              <p class="info-jogador">Nome do Jogador:</p>
+              <p class="info-usuario">Nome do Usuário</p>
+            </div>
+            <div class="membro-acoes">
+              <button class="btn-visualizar">Visualizar</button>
+              <button class="btn-remover">X</button>
+            </div>
+          </div>
+      </div>
+      <div class="detalhe-membro">
+        <button class="btn-remover btn-fechar-detalhe">X</button>
+        <div class="detalhe-avatar">
+            <img src="/assets/imagem_perfil.png" alt="Avatar" >
+        </div>
+        <div class="detalhe-info">
+            <div class="info-line"></div>
+            <div class="info-line"></div>
+            <div class="info-line"></div>
+            <div class="info-line"></div>
+        </div>
+      </div>
+      
+      <a href="#" class="link-deixar-grupo">Deixar Grupo</a>
+    </div>
   </main>
+
+  <div id="add-jogador-modal" class="modal">
+    <div class="modal-content">
+      <div class="conserta-span">
+        <div class="caixa-span">
+          <span class="fechar-modal">&times;</span>
+        </div>  
+      </div>
+      <h2>Adicionar Jogador</h2>
+      <form action="#" class="form-add-jogador">
+        <label for="buscar-jogador">BUSCAR UM JOGADOR:</label><br>
+        <input class="modal-input" type="text" name="buscar-jogador" id="buscar-jogador" placeholder="Digite o nome de usuário...">
+      </form>
+
+      <div class="resultados-busca">
+        <div class="resultado-item">
+          <span class="nome-resultado">Jogador Exemplo 1</span>
+          <button class="btn-add-resultado">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer>
     <div class="div-footer">
       <h4>Geradores de Fichas</h4>

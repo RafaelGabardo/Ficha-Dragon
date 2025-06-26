@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
-  <title>Aventura</title>
+  <title>Entrar em um Grupo</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
@@ -73,21 +72,52 @@
       </div>
     </div>
   </nav>
-  <main id="main-aventura">
+  <main>
     <header>
-      <h1 class="title-aventura">AVENTURA</h1>
-      <h2 class="main-subtitle">Pronto para embarcar na sua jornada?</h2>
+      <h1 class="titulo-criacao">ENTRE EM UM GRUPO</h1>
+      <h2 class="subtitulo-criacao">Encontre jogadores com o mesmo estilo que você!</h2>
     </header>
-   <section class="form-gerar">
-      <div>
-        <a href="montar_aventura.html" class="button red">Montar uma Aventura</a>
-        <a href="entrar_aventura.html" class="button red">Entrar em uma Aventura</a>
-      </div>
-      <div>
-        <a href="grupo.html" class="button red">Seu Grupo Atual</a>
-      </div>
-      <div>
-        <a href="index.html"><button class="button red">Voltar</button></a>
+    <section class="forum-container">
+      <div class="cards-grid">
+        <!-- Card de Grupo Exemplo 1 -->
+        <article class="group-card">
+          <header class="card-header">
+            <h3>A Tumba da Serpente de Jade</h3>
+            <p class="gm-name">Mestre: Dragão_Ancião</p>
+          </header>
+          <div class="card-body">
+            <p class="card-description">Uma aventura clássica de exploração de masmorras com foco em quebra-cabeças e combate tático. Ideal para jogadores iniciantes e veteranos.</p>
+            <div class="card-details">
+              <span><strong>Sistema:</strong> D&D 5.5e</span>
+              <span><strong>Vagas:</strong> 2/5</span>
+              <span><strong>Estilo:</strong> Exploração, Combate</span>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="button red">Pedir para Entrar</a>
+          </footer>
+        </article>
+
+        <!-- Card de Grupo Exemplo 2 -->
+        <article class="group-card">
+          <header class="card-header">
+            <h3>Sombras de Tenebra, o Reino Velado</h3>
+            <p class="gm-name">Mestre: Ancião Nocturnus</p>
+          </header>
+          <div class="card-body">
+            <p class="card-description">Tenebra é um reino onde a luz do sol nunca alcança. Antigas ruínas escondem segredos sombrios, pactos proibidos e criaturas esquecidas.</p>
+            <div class="card-details">
+              <span><strong>Sistema:</strong> D&D 5.5e</span>
+              <span><strong>Vagas:</strong> 3/4</span>
+              <span><strong>Estilo:</strong> Investigação, Interpretação</span>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="button red">Pedir para Entrar</a>
+          </footer>
+        </article>
+
+        <!-- Adicione mais cards aqui -->
       </div>
     </section>
   </main>
@@ -95,43 +125,25 @@
     <div class="div-footer">
       <h4>Geradores de Fichas</h4>
       <ul class="list-footer">
-        <li>
-          <a class="link-footer" href="criar_personagem.html">Gerador de Personagem</a>
-        </li>
-        <li>
-          <a class="link-footer" href="criar_npc.html">Gerador de NPC</a>
-        </li>
-        <li>
-          <a class="link-footer" href="criar_monstro.html">Gerador de Monstro</a>
-        </li>
+        <li><a class="link-footer" href="criar_personagem.html">Gerador de Personagem</a></li>
+        <li><a class="link-footer" href="criar_npc.html">Gerador de NPC</a></li>
+        <li><a class="link-footer" href="criar_monstro.html">Gerador de Monstro</a></li>
       </ul>
     </div>
     <div class="div-footer">
       <h4>Gerenciador de Fichas</h4>
       <ul class="list-footer">
-        <li>
-          <a class="link-footer" href="perfil.html">Seus Personagens</a>
-        </li>
-        <li>
-          <a class="link-footer" href="perfil.html">Seus NPC's</a>
-        </li>
-        <li>
-          <a class="link-footer" href="perfil.html">Seus Monstros</a>
-        </li>
+        <li><a class="link-footer" href="perfil.html">Seus Personagens</a></li>
+        <li><a class="link-footer" href="perfil.html">Seus NPC's</a></li>
+        <li><a class="link-footer" href="perfil.html">Seus Monstros</a></li>
       </ul>
     </div>
     <div class="div-footer">
       <h4>Visualização de Aventura</h4>
       <ul class="list-footer">
-        <li>
-          <a class="link-footer" href="grupo.html">Seu Grupo</a>
-        </li>
-        <li>
-          <a class="link-footer" href="aventura.html">Sua Campanha</a>
-        </li>
-        <li>
-          <a class="link-footer" href="grupo.html">Seu Mestre</a>
-        </li>
+        <li><a class="link-footer" href="grupo.html">Seu Grupo</a></li>
+        <li><a class="link-footer" href="aventura.html">Sua Campanha</a></li>
+        <li><a class="link-footer" href="grupo.html">Seu Mestre</a></li>
       </ul>
     </div>
   </footer>

@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/estilo/style_criacao.css">
   <link rel="stylesheet" href="/estilo/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/fbcc222e4c.js" crossorigin="anonymous"></script>
-  <title>Aventura</title>
+  <title>Montar um Grupo</title>
 </head>
-<body>
+<body id="body-form">
   <nav>
     <ul class="list">
       <li>
@@ -73,65 +72,59 @@
       </div>
     </div>
   </nav>
-  <main id="main-aventura">
+  <main id="main-montar">
     <header>
-      <h1 class="title-aventura">AVENTURA</h1>
-      <h2 class="main-subtitle">Pronto para embarcar na sua jornada?</h2>
+      <h1 class="titulo-criacao">MONTE SEU GRUPO</h1>
+      <h2 class="subtitulo-criacao">Crie sua campanha e convide seus amigos para a aventura!</h2>
     </header>
-   <section class="form-gerar">
-      <div>
-        <a href="montar_aventura.html" class="button red">Montar uma Aventura</a>
-        <a href="entrar_aventura.html" class="button red">Entrar em uma Aventura</a>
-      </div>
-      <div>
-        <a href="grupo.html" class="button red">Seu Grupo Atual</a>
-      </div>
-      <div>
-        <a href="index.html"><button class="button red">Voltar</button></a>
-      </div>
+    <section class="form-section-container">
+      <form class="form-montar-grupo" action="#" method="POST">
+        <div class="form-group">
+          <label for="campaign-name" class="criacao-label">Nome da Campanha:</label>
+          <input type="text" id="campaign-name" name="campaign-name" class="form-input" required placeholder="Ex: A Tumba da Serpente de Jade">
+        </div>
+        <div class="form-group">
+          <label for="system" class="criacao-label">Sistema de Jogo:</label>
+          <input type="text" id="system" name="system" class="form-input" required placeholder="Ex: D&D 5.5e, Tormenta20">
+        </div>
+        <div class="form-group">
+          <label for="vacancies" class="criacao-label">Número de Vagas:</label>
+          <input type="number" id="vacancies" name="vacancies" class="form-input" min="1" max="10" required placeholder="Ex: 5">
+        </div>
+        <div class="form-group">
+          <label for="description" class="criacao-label">Descrição da Aventura:</label>
+          <textarea id="description" name="description" class="form-textarea" rows="6" required placeholder="Descreva o tom da campanha, o estilo de jogo (combate, exploração, interpretação), e qualquer outra informação relevante para os jogadores."></textarea>
+        </div>
+        <div class="form-actions">
+          <a href="grupo.html" class="button">Voltar</a>
+          <button type="submit" class="button red">Publicar Grupo</button>
+        </div>
+      </form>
     </section>
   </main>
   <footer>
     <div class="div-footer">
       <h4>Geradores de Fichas</h4>
       <ul class="list-footer">
-        <li>
-          <a class="link-footer" href="criar_personagem.html">Gerador de Personagem</a>
-        </li>
-        <li>
-          <a class="link-footer" href="criar_npc.html">Gerador de NPC</a>
-        </li>
-        <li>
-          <a class="link-footer" href="criar_monstro.html">Gerador de Monstro</a>
-        </li>
+        <li><a class="link-footer" href="criar_personagem.html">Gerador de Personagem</a></li>
+        <li><a class="link-footer" href="criar_npc.html">Gerador de NPC</a></li>
+        <li><a class="link-footer" href="criar_monstro.html">Gerador de Monstro</a></li>
       </ul>
     </div>
     <div class="div-footer">
       <h4>Gerenciador de Fichas</h4>
       <ul class="list-footer">
-        <li>
-          <a class="link-footer" href="perfil.html">Seus Personagens</a>
-        </li>
-        <li>
-          <a class="link-footer" href="perfil.html">Seus NPC's</a>
-        </li>
-        <li>
-          <a class="link-footer" href="perfil.html">Seus Monstros</a>
-        </li>
+        <li><a class="link-footer" href="perfil.html">Seus Personagens</a></li>
+        <li><a class="link-footer" href="perfil.html">Seus NPC's</a></li>
+        <li><a class="link-footer" href="perfil.html">Seus Monstros</a></li>
       </ul>
     </div>
     <div class="div-footer">
       <h4>Visualização de Aventura</h4>
       <ul class="list-footer">
-        <li>
-          <a class="link-footer" href="grupo.html">Seu Grupo</a>
-        </li>
-        <li>
-          <a class="link-footer" href="aventura.html">Sua Campanha</a>
-        </li>
-        <li>
-          <a class="link-footer" href="grupo.html">Seu Mestre</a>
-        </li>
+        <li><a class="link-footer" href="grupo.html">Seu Grupo</a></li>
+        <li><a class="link-footer" href="aventura.html">Sua Campanha</a></li>
+        <li><a class="link-footer" href="grupo.html">Seu Mestre</a></li>
       </ul>
     </div>
   </footer>

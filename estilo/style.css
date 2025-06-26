@@ -1,11 +1,11 @@
 @font-face {
   font-family: fonte_titulo;
-  src: url(/assets/JainiPurva-Regular.ttf);
+  src: url(../assets/JainiPurva-Regular.ttf);
 }
 
 @font-face {
   font-family: fonte_corpo;
-  src: url(/assets/Inter-VariableFont_opsz\,wght.ttf);
+  src: url(../assets/Inter-VariableFont_opsz\,wght.ttf);
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 #body-index {
   background-color: black;
-  background-image: url(/assets/index_imagem_fundo.png);
+  background-image: url(../assets/index_imagem_fundo.png);
   background-size: cover;
 }
 
